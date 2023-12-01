@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: 'Nova Square', sans-serif;
+}
+
+.nota{
+    background-color: #8BB7DF;
+    color: #024E53;   
+    border-bottom: 3px solid #024E53;
+    border-radius: 25px;
+    box-shadow: 20px 19px 40px 0px rgba(0, 0, 0, 0.447);
+    width: 100%;
+    margin: 0 auto;
+}
+.todoIzq{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 50px;
+    padding-top: 30px;
+
+}
+.containerBotones{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    padding-top: 20px;
+    word-break: break-word;
+}
+
+h2{
+    word-break: break-word;
+}
+
+.deleteButton{
+    color:red;
+    font-size: 25px;
+    background-color: #024d5300;
+    border: none;
+    cursor: pointer;
+}
+.TaskButton button{
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #024E53;
+    margin-left: 80px;
+
+}
+.TaskButton{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dateTask{
+    margin-top: 35px;
+}
+
+.btn :hover{
+    background-color: white;
+    color: #024E53;
+    font-weight: bold;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .nota{
+        width: 95%;
+        flex-direction: column;
+    }
+    .todoIzq{
+        margin: 5px 10px;
+    }
+    button{
+        margin: 0 auto;
+    }
+    .containerBotones {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nota p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    
+    .btn {
+        text-align: center;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .btn> button {
+        margin: 0 auto;
+    }
+
+}
+
